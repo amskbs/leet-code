@@ -1,4 +1,4 @@
-package org.amskbs.easy.pascals_triangle;
+package org.amskbs.easy.pascals_triangle_118;
 
 import java.util.ArrayList;
 import java.util.Collections;

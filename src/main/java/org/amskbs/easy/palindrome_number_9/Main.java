@@ -1,4 +1,4 @@
-package org.amskbs.easy.palindrome_number;
+package org.amskbs.easy.palindrome_number_9;
 
 public class Main {
 

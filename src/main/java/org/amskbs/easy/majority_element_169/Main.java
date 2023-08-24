@@ -1,4 +1,4 @@
-package org.amskbs.easy.majority_element;
+package org.amskbs.easy.majority_element_169;
 
 import java.util.Arrays;
 import java.util.HashMap;

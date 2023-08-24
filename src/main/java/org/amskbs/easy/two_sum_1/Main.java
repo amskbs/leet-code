@@ -1,4 +1,4 @@
-package org.amskbs.easy.two_sum;
+package org.amskbs.easy.two_sum_1;
 
 import java.util.Arrays;
 import java.util.HashMap;

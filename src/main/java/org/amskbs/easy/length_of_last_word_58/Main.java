@@ -1,4 +1,4 @@
-package org.amskbs.easy.length_of_last_word;
+package org.amskbs.easy.length_of_last_word_58;
 
 import java.util.List;
 
