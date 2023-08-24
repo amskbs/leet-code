@@ -1,7 +1,12 @@
 package org.amskbs.easy.majority_element;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 
 public class Main {
     /*
@@ -12,17 +17,27 @@ public class Main {
      */
     public static void main(String[] args) {
         Main main = new Main();
-        System.out.println(main.majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
-        System.out.println(main.majorityElement(new int[]{6, 5, 5}));
+        int[] array1 = new int[]{2, 2, 1, 1, 1, 2, 2, 2, 2, 2, 1, 1};
+        int[] array2 = new int[]{6, 5, 5};
+        int[] array3 = new int[]{6, 5, 5, 6, 6};
+        List<int[]> arrays = List.of(array1, array2, array3);
+        for (int[] array : arrays) {
+            System.out.println("v1 " + main.majorityElement(array));
+            System.out.println("v2 " + main.majorityElement2(array));
+            System.out.println("v3 " + main.majorityElement3(array));
+            System.out.println();
+        }
+
     }
 
     public int majorityElement(int[] nums) {
-        if (nums.length == 1) {
+        if (nums.length <= 2) {
             return nums[0];
         }
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            if (i > nums.length / 2 && !map.containsKey(nums[i])) {
+            Integer prevCount = map.get(nums[i]);
+            if (i > nums.length / 2 && prevCount == null) {
                 continue;
             }
             Integer count = map.merge(nums[i], 1, (oldValue, newValue) -> oldValue + 1);
@@ -31,5 +46,28 @@ public class Main {
             }
         }
         return 0;
+    }
+
+    public int majorityElement2(int[] nums) {
+        return Arrays.stream(nums)
+                .boxed()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .entrySet()
+                .stream()
+                .filter(e -> e.getValue() > nums.length / 2)
+                .findFirst()
+                .get().getKey();
+    }
+
+    public int majorityElement3(int[] nums) {
+        int candidate = nums[0];
+        int count = 0;
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
+            }
+            count += (candidate == num) ? 1 : -1;
+        }
+        return candidate;
     }
 }
