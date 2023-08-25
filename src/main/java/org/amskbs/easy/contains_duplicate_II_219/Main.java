@@ -15,7 +15,6 @@ public class Main {
         for (Input input : inputs) {
             System.out.println(main.containsNearbyDuplicate(input.array, input.k));
         }
-
     }
 
     public boolean containsNearbyDuplicate(int[] nums, int k) {
