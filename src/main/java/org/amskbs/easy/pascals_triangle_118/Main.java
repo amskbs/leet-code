@@ -29,7 +29,6 @@ public class Main {
             previousRow = newRow;
         }
 
-        System.out.println(result);
         return result;
     }
 
