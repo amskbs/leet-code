@@ -11,8 +11,8 @@ public class Main {
         }
         ListNode node1 = head;
         ListNode node2 = head;
-        while (true) {
-            if (node1.next == null || node2.next == null || node2.next.next == null) {
+        while (node2 != null) {
+            if (node1.next == null || node2.next == null) {
                 return false;
             }
             node1 = node1.next;
@@ -21,6 +21,7 @@ public class Main {
                 return true;
             }
         }
+        return false;
     }
 
     private static class ListNode {
