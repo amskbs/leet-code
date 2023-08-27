@@ -1,4 +1,4 @@
-package org.amskbs.easy.valid_palindrome_125;
+package org.amskbs.easy.n125_valid_palindrome;
 
 import java.util.List;
 

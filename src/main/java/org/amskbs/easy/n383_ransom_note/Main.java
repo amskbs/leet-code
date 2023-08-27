@@ -1,4 +1,4 @@
-package org.amskbs.easy.ransom_note_383;
+package org.amskbs.easy.n383_ransom_note;
 
 import java.util.HashMap;
 import java.util.List;

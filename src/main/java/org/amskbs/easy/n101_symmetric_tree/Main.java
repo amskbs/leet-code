@@ -1,4 +1,4 @@
-package org.amskbs.easy.symmetric_tree_101;
+package org.amskbs.easy.n101_symmetric_tree;
 
 public class Main {
 

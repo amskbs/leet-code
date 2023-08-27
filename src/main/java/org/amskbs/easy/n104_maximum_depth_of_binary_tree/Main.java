@@ -1,4 +1,4 @@
-package org.amskbs.easy.maximum_depth_of_binary_tree_104;
+package org.amskbs.easy.n104_maximum_depth_of_binary_tree;
 
 public class Main {
     public static void main(String[] args) {

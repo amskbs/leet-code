@@ -1,4 +1,4 @@
-package org.amskbs.easy.is_subsequence_392;
+package org.amskbs.easy.n392_is_subsequence;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.amskbs.easy.word_pattern_290;
+package org.amskbs.easy.n290_word_pattern;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.amskbs.easy.contains_duplicate_II_219;
+package org.amskbs.easy.n219_contains_duplicate_II;
 
 import java.util.HashMap;
 import java.util.List;

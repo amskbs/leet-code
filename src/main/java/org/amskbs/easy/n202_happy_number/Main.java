@@ -1,4 +1,4 @@
-package org.amskbs.easy.happy_number_202;
+package org.amskbs.easy.n202_happy_number;
 
 import java.util.HashSet;
 import java.util.List;

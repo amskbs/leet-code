@@ -1,4 +1,4 @@
-package org.amskbs.easy.roman_to_integer_13;
+package org.amskbs.easy.n13_roman_to_integer;
 
 
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package org.amskbs.easy.same_tree_100;
+package org.amskbs.easy.n100_same_tree;
 
 public class Main {
 
