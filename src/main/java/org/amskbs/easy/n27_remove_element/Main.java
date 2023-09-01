@@ -29,13 +29,6 @@ public class Main {
         return count;
     }
 
-    private static class Input {
-        final int[] array;
-        final int k;
-
-        public Input(int[] array, int k) {
-            this.array = array;
-            this.k = k;
-        }
+    private record Input(int[] array, int k) {
     }
 }

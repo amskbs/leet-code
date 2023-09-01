@@ -44,13 +44,6 @@ public class Main {
         return true;
     }
 
-    private static class Input {
-        final String pattern;
-        final String s;
-
-        public Input(String pattern, String s) {
-            this.pattern = pattern;
-            this.s = s;
-        }
+    private record Input(String pattern, String s) {
     }
 }

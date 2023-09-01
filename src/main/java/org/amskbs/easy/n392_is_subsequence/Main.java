@@ -43,13 +43,6 @@ public class Main {
         return false;
     }
 
-    private static class Input {
-        final String s;
-        final String t;
-
-        public Input(String s, String t) {
-            this.s = s;
-            this.t = t;
-        }
+    private record Input(String s, String t) {
     }
 }

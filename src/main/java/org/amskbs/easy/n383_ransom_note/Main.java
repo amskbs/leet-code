@@ -48,13 +48,6 @@ public class Main {
         return index;
     }
 
-    private static class Input {
-        final String ransomNote;
-        final String magazine;
-
-        public Input(String ransomNote, String magazine) {
-            this.ransomNote = ransomNote;
-            this.magazine = magazine;
-        }
+    private record Input(String ransomNote, String magazine) {
     }
 }

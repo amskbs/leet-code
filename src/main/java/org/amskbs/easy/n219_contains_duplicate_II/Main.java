@@ -36,13 +36,6 @@ public class Main {
         return false;
     }
 
-    private static class Input {
-        int[] array;
-        int k;
-
-        public Input(int[] array, int k) {
-            this.array = array;
-            this.k = k;
-        }
+    private record Input(int[] array, int k) {
     }
 }
