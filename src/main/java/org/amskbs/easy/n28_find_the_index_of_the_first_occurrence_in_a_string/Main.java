@@ -45,5 +45,4 @@ public class Main {
 
     private record Input(String haystack, String needle) {
     }
-
 }
