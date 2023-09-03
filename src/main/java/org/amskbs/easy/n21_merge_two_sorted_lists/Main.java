@@ -61,10 +61,6 @@ public class Main {
         return headNode;
     }
 
-    private void appendNode(ListNode node, ListNode lastNode, ListNode headNode) {
-
-    }
-
     public static class ListNode {
         int val;
         ListNode next;
